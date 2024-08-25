@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="wraper">
+
+      <!-- contact section -->
+
+<section class="contact-section">
+
+<a href="" class="messengers-link"><img src="./img/icons/viber-icon2.svg" alt=""></a>
+<a href="" class="messengers-link"><img src="./img/icons/telegram-icon2.svg" alt=""></a>
+<a href="" class="messengers-link"><img src="./img/icons/whatsapp-icon2.svg" alt=""></a>
+
+<div class="phone-link">
+<a href="tel:+380988909032" class="phone-link">+38-098-890-90-32</a>
+
+</div>
+
+</section>
+
+      <!-- first block - experience section -->
+
+      <section class="experience-section">
+        <img src="./img/my-photo.jpg" alt="My photo" class="my-photo" />
+
+        <div>
+          <a href="https://www.facebook.com">
+            <img
+              src="./img/icons/fb-icon.svg"
+              alt="My facebook link"
+              class="facebook-icon"
+            />
+          </a>
+          <a href="https://www.instagram.com">
+            <img
+              src="./img/icons/inst-icon.svg"
+              alt="My instagram link"
+              class="instagram-icon"
+            />
+          </a>
+        </div>
+
+        <div class="experience-description">
+          <p class="experience-description-text">
+            5-year experience with <br />computer technology
+          </p>
+        </div>
+
+        <a
+          class="my-projects-link"
+          href="https://acode.com.ua/linux-lessons/"
+          >My projects in:</a
+        >
+
+        <div>
+          <img
+            src="./img/icons/linux-icon.svg"
+            alt="Linux logo"
+            class="icon l-p-icon"
+          />
+          <img
+            src="./img/icons/photoshop-icon.svg"
+            alt="Adobe Photoshop logo"
+            class="icon l-p-icon"
+          />
+          <img
+            src="./img/icons/js-icon.svg"
+            alt="Java Script logo"
+            class="icon"
+          />
+        </div>
+      </section>
+
+      <!-- second block - info section -->
+
+      <section class="my-info-section">
+        <h2 class="my-name">Hi! I am Pavlo </h2>
+        <h1 class="my-profession">
+          I can coding and doing sites & computer aid remotely
+        </h1>
+
+        <p class="my-locattion">I live in Vynnytsya, Ukraine</p>
+        <p class="my-assignment">
+          My assignment - Computer & <br />
+          service engineer
+        </p>
+
+        <div>
+          <p class="my-skills">My skills:</p>
+
+          <ul class="my-skills-list">
+            <li class="my-skills-item">
+              <p class="my-skills-text">
+                computer assembly, replacement of computer accessories,
+              </p>
+            </li>
+            <li class="my-skills-item">
+              <p class="my-skills-text">
+                professional work in graphic editors Corel Draw, Photoshop and
+                AutoCAD,
+              </p>
+            </li>
+            <li class="my-skills-item">
+              <p class="my-skills-text">
+                creation, design and optimization of sites using HTML and CSS,
+              </p>
+            </li>
+            <li class="my-skills-item">
+              <p class="my-skills-text">
+                beginner programming skills in javascript,
+                beginner programming skills in C++
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- third block - project price section -->
+
+      <section class="project-price-section">
+        <form action="#" class="project-price-form" data-netlify="true" id="project-price-form">
+          <h4 class="project-price-title">How much it costs</h4>
+
+          <img src="./img/my-logo.jpg" alt="My logo" class="my-logo" />
+
+          <div class="project-type-container">
+            <label for="project-type" class="form-field-title"
+              >Service-types:</label>
+            <select
+              name="project-type"
+              id="project-type"
+              class="project-price-select">
+              <option selected value="computer-network service">
+                Computer & network service
+              </option>
+              <option value="computer assembly">computer assembly</option>
+              <option value="network setup">network setup</option>
+              <option selected value="computer cleaning">computer cleaning</option>
+            </select>
+          </div>
+
+          <div class="activity-type-container">
+            <p class="form-field-title">Job-types:</lp>
+
+              <div class="activity-type-item"> 
+              <input type="checkbox" name="computer-service" id="computer-service" class="activity-type-checkbox">
+              <label for="computer-service" class="activity-type-title">computer service</label>
+              </div>
+              
+              <div class="activity-type-item"> 
+              <input checked type="checkbox" name="network-service" id="network-service" class="activity-type-checkbox">
+              <label for="network-service" class="activity-type-title">network service</label>
+              </div>
+
+              <div class="activity-type-item"> 
+              <input checked type="checkbox" name="graphics" id="graphics" class="activity-type-checkbox">
+              <label for="graphics" class="activity-type-title">graphics</label>
+              </div>
+
+              <div class="activity-type-item"> 
+              <input type="checkbox" name="sites-coding" id="sites-coding" class="activity-type-checkbox">
+              <label for="sites-coding" class="activity-type-title">sites coding</label>
+              </div>
+          </div>
+
+          <div class="project-price-container">
+              <p class="form-field-title">Total price:</lp>
+              <p class="project-price-sum"><span class="project-currency">$</span><span id="total-price">0</span></lp>  
+          </div>
+
+          <input type="hidden" name="email">
+
+          <div class="project-price-button-container">
+          <button class="project-price-button">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- modal section -->
+
+    <div class="modal-bgd" id="modal-email">
+<div class="modal-container">
+  <button class="modal-close-btn"><img src="./img/icons/close-icon.svg" alt="close-icon"></button>
+  <img src="./img/icons/mail-icon.svg" alt="mail-icon" class="mail-icon">
+<h4 class="modal-title">I’ll call you in a hour </h4>
+<form action="#" class="modal-container-form" id="email-container">
+  <div class="email-input-container" id="email-input-container">
+<label for="user-mail" class="user-email-title">Email:</label>
+<input type="email" name="user-email" id="user-email" class="user-email" placeholder="Type your email here">
+<p class="email-error">Input correct email please</p>
+</div>
+
+<button type="submit" class="submit">Send</button>
+</form>
+</div>
+
+</div>
+
+   <div class="modal-bgd" id="modal-success">
+<div class="modal-container modal-container-success">
+   <button class="modal-close-btn"><img src="./img/icons/close-icon.svg" alt="close-icon"></button>
+   <img src="./img/my-logo.jpg" alt="My logo" class="my-logo-success" />
+<p class="modal-success">I got your email</p>
+<p class="modal-thanks">Thanks a lot!</p>
+  </div>
+
+  </div>
+
+  <script src="./js/script.js"></script>
+
+  </body>
+</html>
